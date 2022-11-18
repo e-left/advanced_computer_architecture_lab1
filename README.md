@@ -1,6 +1,7 @@
 # This repo serves as the report and codebase for Lab 1/3 for the Advanced Computer Architecture course, on the Electrical and Computer Engineering school of Aristotle University of Thessaloniki
 
-Full name: Αλεξανδρίδης Φώτιος, 9953
+Ανδρονίκου Δημήτρης, 9836
+Αλεξανδρίδης Φώτιος, 9953
 
 ---
 ## Advaced Computer Architecture, Lab 01
@@ -54,6 +55,8 @@ The different in-order CPU types are:
 
 - MinorCPU: Minor is an in-order processor model with a fixed pipeline but configurable data structures and execute behaviour. It is intended to be used to model processors with strict in-order execution behaviour and allows visualisation of an instruction's position in the pipeline through the MinorTrace/minorview.py format/tool. The intention is to provide a framework for micro-architecturally correlating the model with a particular, chosen processor with similar capabilities.
 
+- HPI: The HPI model is tuned to be representative of a state of the art ARMv8-A in order CPU. This model uses the same 4 stage pipeline model as the MinorCPU. 
+
 #### Subquestions
 
 The program we will be executing is a simple recursive fibonacci calculator for the first 28 fibonacci numbers. Its source code can be found in `lab1/fib.c`
@@ -64,7 +67,8 @@ The program we will be executing is a simple recursive fibonacci calculator for 
 | TimingSimpleCPU | 0.023691 | 0.047353 | 0.023690 |
 
 ##### Notes 
-All times are in seconds. Default configuration includes a 2 GHz CPU frequency, and a DDR3\_1600\_8x8 memory controller. When halving the CPU frequency, we can see that the execution time approximately doubles, which makes sense if we define $frequency = 1 / time$. Changing the memory controller has an almost insignificant impact to the execution time, due to the benchmarking program using close to none variables.
+All times are in seconds. Default configuration includes a 2 GHz CPU frequency, and a DDR3\_1600\_8x8 memory controller. When halving the CPU frequency, we can see that the execution time approximately doubles, which makes sense if we define $frequency = 1 / time$. Changing the memory controller has an almost insignificant impact to the execution time, due to the benchmarking program using close to none variables. Also the MinorCPU is faster than the TimingSimpleCPU in general because it
+utilizes a pipeline, while the other one does not.
 
 
 ### Lab 01 assignment review
@@ -73,3 +77,7 @@ In general, the hardest part of this assignment was the toolchain setup. After t
 that stores a large amount of data in memory, or that reads different memory locations frequently, thus interacting frequently with cache), in order for this first lab to not be too time consuming, since the focus of this lab is to set up an environment, familiarize ourselves with the tools we are going to use, and develop a robust testing/simulating setup (automate cross compilation, execution with parametrizable bash/python scripts). The gem5 documentation is really helpful and
 detailed to the extent needed (provides the user with sensible defaults and bite-sized portions of information when starting out). 
 
+### Bibliography
+
+1. [http://pages.cs.wisc.edu/~david/courses/cs752/Fall2015/gem5-tutorial/index.html](http://pages.cs.wisc.edu/~david/courses/cs752/Fall2015/gem5-tutorial/index.html)
+2. [https://www.gem5.org/documentation/](https://www.gem5.org/documentation/)
