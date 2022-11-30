@@ -112,25 +112,25 @@ cache line	cache\_line\_size=64
 
 ![](Aspose.Words.f3488851-f0ed-4cf6-b351-049795c663bc.001.png)
 
-\1.	Ο χρόνος εκτέλεσης του specsjeng είναι πολύ μεγαλύτερος από των άλλων
+1.	Ο χρόνος εκτέλεσης του specsjeng είναι πολύ μεγαλύτερος από των άλλων
 
 ![](Aspose.Words.f3488851-f0ed-4cf6-b351-049795c663bc.002.png)
 
-\2.	Το CPI του specsjeng είναι πολύ μεγαλύτερο από των άλλων
+2.	Το CPI του specsjeng είναι πολύ μεγαλύτερο από των άλλων
 
 
 ![](Aspose.Words.f3488851-f0ed-4cf6-b351-049795c663bc.003.png)
 
-\3.	Όμως το miss rate των instructions του specmcf είναι πολύ μεγαλύτερο από των άλλων
+3.	Όμως το miss rate των instructions του specmcf είναι πολύ μεγαλύτερο από των άλλων
 
 ![](Aspose.Words.f3488851-f0ed-4cf6-b351-049795c663bc.004.png)
 
-\4.	Το miss rate των data του specsjeng είναι πολύ μεγαλύτερο από των άλλων
+4.	Το miss rate των data του specsjeng είναι πολύ μεγαλύτερο από των άλλων
 
 
 ![](Aspose.Words.f3488851-f0ed-4cf6-b351-049795c663bc.005.png)
 
-\5.	Το miss rate στην L2 του specsjeng και του speclibm είναι πολύ μεγαλύτερα από των άλλων
+5.	Το miss rate στην L2 του specsjeng και του speclibm είναι πολύ μεγαλύτερα από των άλλων
 
 Λόγω του 5 και του 4 είναι λογικό να προκύψει μεγάλο CPI για το specsjeng, άρα και μεγάλος χρόνος εκτέλεσης.
 # 4o
