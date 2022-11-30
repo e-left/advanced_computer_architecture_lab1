@@ -21,9 +21,7 @@ cache line	cache\_line\_size=64
 1) χρόνο εκτέλεσης			*sim\_seconds  =  0.083982*
 1) CPI 					*system.cpu.cpi  =  1.679650*
 
-1) συνολικά miss rates για την L1 Instruction cache
-
-*system.cpu.icache.overall\_miss\_rate::total     0.000077*
+1) συνολικά miss rates για την L1 Instruction cache *system.cpu.icache.overall\_miss\_rate::total     0.000077*
 
 1) συνολικά miss rates για την L1 Data cache *system.cpu.dcache.overall\_miss\_rate::total     0.014798*
 
@@ -35,9 +33,7 @@ cache line	cache\_line\_size=64
 1) χρόνο εκτέλεσης			*sim\_seconds  =  0.064955*
 1) CPI 					*system.cpu.cpi  =  1.299095*
 
-1) συνολικά miss rates για την L1 Instruction cache
-
-*system.cpu.icache.overall\_miss\_rate::total     0.023612*
+1) συνολικά miss rates για την L1 Instruction cache *system.cpu.icache.overall\_miss\_rate::total     0.023612*
 
 1) συνολικά miss rates για την L1 Data cache *system.cpu.dcache.overall\_miss\_rate::total     0.002108*
 
@@ -49,9 +45,7 @@ cache line	cache\_line\_size=64
 1) χρόνο εκτέλεσης			*sim\_seconds  =  0.059396*
 1) CPI 					*system.cpu.cpi  =  1.187917*
 
-1) συνολικά miss rates για την L1 Instruction cache
-
-*system.cpu.icache.overall\_miss\_rate::total     0.000221*
+1) συνολικά miss rates για την L1 Instruction cache *system.cpu.icache.overall\_miss\_rate::total     0.000221*
 
 1) συνολικά miss rates για την L1 Data cache *system.cpu.dcache.overall\_miss\_rate::total     0.001637*
 
@@ -60,28 +54,26 @@ cache line	cache\_line\_size=64
 *system.l2.overall\_miss\_rate::total           0.077760*
 
 ## Specsjeng
-1) χρόνο εκτέλεσης			*sim\_seconds  =  0.513528*
-1) CPI 					*system.cpu.cpi  =  10.270554*
+1) χρόνο εκτέλεσης:			*sim\_seconds  =  0.513528*
+1) CPI: 					*system.cpu.cpi  =  10.270554*
 
-1) συνολικά miss rates για την L1 Instruction cache
+1) συνολικά miss rates για την L1 Instruction cache: *system.cpu.icache.overall\_miss\_rate::total     0.000020*
 
-*system.cpu.icache.overall\_miss\_rate::total     0.000020*
+1) συνολικά miss rates για την L1 Data cache: *system.cpu.dcache.overall\_miss\_rate::total     0.121831*
 
-1) συνολικά miss rates για την L1 Data cache *system.cpu.dcache.overall\_miss\_rate::total     0.121831*
-
-1) συνολικά miss rates για την L2 cache 
+1) συνολικά miss rates για την L2 cache: 
 
 *system.l2.overall\_miss\_rate::total           0.999972*
 
 ## Speclibm
-1) χρόνο εκτέλεσης			*sim\_seconds  =  0.174671*
-1) CPI 					*system.cpu.cpi  =* *3.493415*
+1) χρόνο εκτέλεσης:			*sim\_seconds  =  0.174671*
+1) CPI: 					*system.cpu.cpi  =* *3.493415*
 
-1) συνολικά miss rates για την L1 Instruction cache *system.cpu.icache.overall\_miss\_rate::total     0.000094*
+1) συνολικά miss rates για την L1 Instruction cache: *system.cpu.icache.overall\_miss\_rate::total     0.000094*
 
-1) συνολικά miss rates για την L1 Data cache *system.cpu.dcache.overall\_miss\_rate::total     0.060972*
+1) συνολικά miss rates για την L1 Data cache: *system.cpu.dcache.overall\_miss\_rate::total     0.060972*
 
-1) συνολικά miss rates για την L2 cache 
+1) συνολικά miss rates για την L2 cache: 
 
 *system.l2.overall\_miss\_rate::total           0.999944*
 
@@ -135,16 +127,14 @@ cache line	cache\_line\_size=64
 Λόγω του 5 και του 4 είναι λογικό να προκύψει μεγάλο CPI για το specsjeng, άρα και μεγάλος χρόνος εκτέλεσης.
 # 4o
 ## Specbzip
-1) χρόνο εκτέλεσης			*sim\_seconds  =  0.083609*
-1) CPI 					*system.cpu.cpi  =  1.672175*
+1) χρόνο εκτέλεσης:			*sim\_seconds  =  0.083609*
+1) CPI: 					*system.cpu.cpi  =  1.672175*
 
-1) συνολικά miss rates για την L1 Instruction cache
+1) συνολικά miss rates για την L1 Instruction cache: *system.cpu.icache.overall\_miss\_rate::total     0.000077*
 
-*system.cpu.icache.overall\_miss\_rate::total     0.000077*
+1) συνολικά miss rates για την L1 Data cache: *system.cpu.dcache.overall\_miss\_rate::total     0.014795*
 
-1) συνολικά miss rates για την L1 Data cache *system.cpu.dcache.overall\_miss\_rate::total     0.014795*
-
-1) συνολικά miss rates για την L2 cache 
+1) συνολικά miss rates για την L2 cache: 
 
 *system.l2.overall\_miss\_rate::total           0.282159*
 
