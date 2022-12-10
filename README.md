@@ -51,11 +51,27 @@ L2 data access count is the same as L1 miss count
 
 The different in-order CPU types are:
 
-- SimpleCPU: The SimpleCPU is a purely functional, in-order model that is suited for cases where a detailed model is not necessary. This can include warm-up periods, client systems that are driving a host, or just testing to make sure a program works. It is now broken up into three classes, the BaseSimpleCPU, the AtomicSimpleCPU and the TimingSimpleCPU.
+ - AtomicSimpleCPUs: they have no pipeline, and are therefore completely unrealistic. However, they do run much faster. They execute all processes of an instruction in one clock cycle. Memory access is done directly and they use Atomic memory accesses.
+  
+ - TimingSimpleCPUs: They have no pipeline, and are therefore completely unrealistic. However, they run much faster. They use Timing memory accesses which means they wait until the memory access is complete. Memory access requests take time to reach the memory system and return. But because there is no CPU pipeline, the simulated CPU idles on each memory request waiting for a response.
+ 
+ - MinorCPUs: Minor is used to model processors with strict in-order execution behavior and allows visualization of an instruction's position in the pipeline through the MinorTrace tool. It provides a framework for associating the model with a specific, selected processor with similar capabilities. It is considered more realistic than previous models, but is not currently capable of multithreading. It is a model with a fixed pipeline but with configurable data structures and execution behavior.
+ 
+It has four pipeline stages:
+1. fetch1
+2. fetch2
+3. decode
+4. execute
 
-- MinorCPU: Minor is an in-order processor model with a fixed pipeline but configurable data structures and execute behaviour. It is intended to be used to model processors with strict in-order execution behaviour and allows visualisation of an instruction's position in the pipeline through the MinorTrace/minorview.py format/tool. The intention is to provide a framework for micro-architecturally correlating the model with a particular, chosen processor with similar capabilities.
+- High-Performance In-orderCPUs (HPI): The HPI timing model is tuned to be representative of a modern Armv8-A in-order implementation. The HPI pipeline uses the same four-stage model as the MinorCPU 
 
-- HPI: The HPI model is tuned to be representative of a state of the art ARMv8-A in order CPU. This model uses the same 4 stage pipeline model as the MinorCPU. 
+A Generic Interrupt Controller (GIC) supports the routing of software-generated, private and shared peripheral interrupts between. The GIC allows software to hide, enable and disable interrupts, from individual sources, to prioritize (hardware) individual sources, and to generate software interrupts.
+
+The Data Processing Unit(Data Processing Unit-DPU) contains general purpose registers and system registers. This allows the memory system to be configured and controlled and to decode and execute instructions. The FPU contains the floating-point registers and status registers. It performs floating-point operations on the data in the floating-point register file. The DPU and FPU can be modeled by the functional units (FU) in the Execute stage of the MinorCPU pipeline.
+
+It also has an L1 instruction cache and an L1 data cache. 
+
+The Memory Management Unit (MMU) is to allow the system to execute multiple tasks as independent programs running in their own private virtual memory space. They do not need any knowledge of the physical memory mapping of the system, i.e. the addresses actually used by the hardware.
 
 #### Subquestions
 
