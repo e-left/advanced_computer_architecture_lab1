@@ -89,7 +89,7 @@ utilizes a pipeline, while the other one does not.
 
 ### Lab 01 assignment review
 
-TODO: change this
+
 In general, the hardest part of this assignment was the toolchain setup. After that was done, the next obstacle was the large size of the output files(for the hello world example the `config.ini` file has 1537 lines, and the `stats.txt` file has 1181 lines), and as such parsing them and retrieving the requested information was time consuming. Finally, the example benchmark program should benchmark more aspects of memory, and as such a guideline for that would be useful (e.g. a program
 that stores a large amount of data in memory, or that reads different memory locations frequently, thus interacting frequently with cache), in order for this first lab to not be too time consuming, since the focus of this lab is to set up an environment, familiarize ourselves with the tools we are going to use, and develop a robust testing/simulating setup (automate cross compilation, execution with parametrizable bash/python scripts). The gem5 documentation is really helpful and
 detailed to the extent needed (provides the user with sensible defaults and bite-sized portions of information when starting out). 
